@@ -1,0 +1,64 @@
+@import 'pywal.css';
+
+* {
+    background-image: none;
+    box-shadow: none;
+    font-family: JetbrainsMono Nerd Font;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+window {
+	background: url("/home/malde/Documents/dotfiles/wallpapers/clouds_blurred.jpg");
+	background-size: cover;
+	font-size: 16pt;
+	color: @color4;
+}
+
+button {
+    border-radius: 0;
+    border-color: @color2;  /* Base01 with transparency */
+ 
+    text-decoration-color: @color6;  /* Base1 */
+    color: @color5;  /* Base2 */
+    background-color: rgba(0, 0, 0, 0);  /* Transparent */
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    margin: 24px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    background-size: 25%;
+}
+
+button:hover {
+    background-color: @color4;  /* Orange from Solarized */
+    margin: 12px;
+}
+
+#lock {
+    background-image: image(url("/home/malde/.config/wlogout/lock.png"));
+}
+
+#logout {
+    background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#hibernate {
+    background-image: image(url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+}
+
+#suspend {
+    background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+}
+
+#shutdown {
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}
